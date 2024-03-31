@@ -1,6 +1,8 @@
 # Inventory Service
 This project is used with a collection of projects that are used to trial CI/CD tools and DevEx tools.
 
+[![Java CI with Maven](https://github.com/Dirkadin/inventory/actions/workflows/maven.yml/badge.svg)](https://github.com/Dirkadin/inventory/actions/workflows/maven.yml)
+
 ## Technologies used:
 1. Java 21
 2. Spring Boot
