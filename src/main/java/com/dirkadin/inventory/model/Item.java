@@ -1,4 +1,4 @@
-package com.dirkadin.inventory;
+package com.dirkadin.inventory.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

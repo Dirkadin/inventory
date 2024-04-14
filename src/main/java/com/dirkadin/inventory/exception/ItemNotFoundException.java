@@ -1,7 +1,7 @@
-package com.dirkadin.inventory;
+package com.dirkadin.inventory.exception;
 
 public class ItemNotFoundException extends RuntimeException {
-    ItemNotFoundException(Long id) {
+    public ItemNotFoundException(Long id) {
         super("Could not find item " + id);
     }
 }

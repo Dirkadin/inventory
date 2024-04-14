@@ -1,5 +1,8 @@
 package com.dirkadin.inventory;
 
+import com.dirkadin.inventory.exception.ItemNotFoundException;
+import com.dirkadin.inventory.model.Item;
+import com.dirkadin.inventory.model.ItemModelAssembler;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.IanaLinkRelations;
@@ -24,7 +27,7 @@ public class InventoryController {
     }
 
     @GetMapping("/items")
-    CollectionModel<EntityModel<Item>> getAll() {
+    public CollectionModel<EntityModel<Item>> getAll() {
         List<EntityModel<Item>> items = repository.findAll().stream()
                 .map(assembler::toModel)
                 .collect(Collectors.toList());
@@ -42,7 +45,7 @@ public class InventoryController {
     }
 
     @GetMapping("/items/{id}")
-    EntityModel<Item> one(@PathVariable Long id) {
+    public EntityModel<Item> one(@PathVariable Long id) {
         Item item = repository.findById(id)
                 .orElseThrow(() -> new ItemNotFoundException(id));
 

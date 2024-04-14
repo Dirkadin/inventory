@@ -1,5 +1,6 @@
 package com.dirkadin.inventory;
 
+import com.dirkadin.inventory.model.Item;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

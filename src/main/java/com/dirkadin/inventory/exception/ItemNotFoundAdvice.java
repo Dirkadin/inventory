@@ -1,4 +1,4 @@
-package com.dirkadin.inventory;
+package com.dirkadin.inventory.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
