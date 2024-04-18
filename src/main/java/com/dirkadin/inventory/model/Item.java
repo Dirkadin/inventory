@@ -10,12 +10,12 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class Item {
-    private @Id @GeneratedValue Long id;
-    private String name;
-    private double price;
+  private @Id @GeneratedValue Long id;
+  private String name;
+  private double price;
 
-    public Item(String name, double price) {
-        this.name = name;
-        this.price = price;
-    }
+  public Item(String name, double price) {
+    this.name = name;
+    this.price = price;
+  }
 }
