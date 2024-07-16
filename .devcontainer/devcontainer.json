@@ -2,8 +2,11 @@
 	"image": "mcr.microsoft.com/devcontainers/java:21",
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
-			"version": "none",
-			"installMaven": "true"
+			"installMaven": true,
+			"version": "none"
+		},
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"configureZshAsDefaultShell": true
 		}
 	},
 	"customizations": {
@@ -11,14 +14,7 @@
 			"extensions": [
 				"albert.TabOut",
 				"oderwat.indent-rainbow"
-			],	
-			"settings": {
-				"terminal.integrated.defaultProfile.linux": "zsh",
-				"terminal.integrated.profiles.linux": { "zsh": { "path": "/bin/zsh" } },
-				"editor.detectIndentation": false,
-				"editor.insertSpaces": true,
-				"editor.tabSize": 2
-			}
+			]
 		}
 	}
 }
